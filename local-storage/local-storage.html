@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Налаштувань Стилів</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="local-storage.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Налаштування Стилів Сайту</h1>
+    <form name="styleForm">
+        <div class="form-group">
+            <label for="colorSelect">Вибір кольору теми:</label>
+            <select class="form-control" name="formControl" id="colorSelect">
+                <option value="theme-default">Стандартна</option>
+                <option value="theme-green">Зелена</option>
+                <option value="theme-dark">Темна</option>
+                <option value="theme-blue">Синя</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="fontSizeSelect">Вибір розміру шрифту:</label>
+            <select class="form-control" name="formFont" id="fontSizeSelect">
+                <option value="font-small">Малий</option>
+                <option value="font-medium">Середній</option>
+                <option value="font-large">Великий</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary button">Застосувати</button>
+        <button type="button" class="btn btn-primary button-remove">За Замовчуванням</button>
+    </form>
+</div>
+
+<script src="local-storage.js">
+</script>
+
+</body>
+</html>

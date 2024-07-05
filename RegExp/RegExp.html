@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Форма реєстрації</h2>
+    <form name="myForm">
+        <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Введіть ваше ім'я">
+            <p class="name"></p>
+        </div>
+        <div class="form-group">
+            <label for="email">Електронна пошта</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Введіть вашу електронну пошту">
+            <p class="email"></p>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Введіть ваш пароль">
+            <p class="password"></p>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Підтвердіть пароль</label>
+            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Підтвердіть ваш пароль">
+            <p class="confirm-password"></p>
+        </div>
+        <button type="submit" class="btn btn-primary submit">Зареєструватися</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="RegExp.js"></script>
+</body>
+</html>

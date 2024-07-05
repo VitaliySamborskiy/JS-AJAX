@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<form name="myForm">
+    <fieldset>
+        <label>заповнити поле</label>
+        <input type="checkbox" name="fill" value="fill">
+        <label>додати обводку</label>
+        <input type="checkbox" name="border" value="border">
+    </fieldset>
+    <fieldset>
+        <label>колір заливки поля</label>
+        <input type="color" name="colorFill" value="colorFill">
+        <label>колір заливки</label>
+        <input type="color" name="colorBorder" value="colorBorder">
+    </fieldset>
+    <fieldset>
+        <label>зробити квадрат</label>
+        <input type="radio" name="form" value="formSquare">
+        <label>зробити трикутник</label>
+        <input type="radio" name="form" value="formTriangle">
+        <label>зробити прямокутник</label>
+        <input type="radio" name="form" value="formRectangle">
+        <label>зробити коло</label>
+        <input type="radio" name="form" value="formCircle">
+    </fieldset>
+    <input type="button" value="створити" onclick="createDiv()">
+</form>
+<div class="container"></div>
+<script src="form.js">
+</script>
+</body>
+</html>

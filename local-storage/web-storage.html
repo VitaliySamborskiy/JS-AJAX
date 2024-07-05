@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Реєстраційна форма</h1>
+    <form name="myForm">
+        <div class="mb-3">
+            <label for="username" class="form-label">Ім'я користувача</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Введіть ваше ім'я">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Електронна пошта</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Введіть вашу електронну пошту">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Пароль</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Введіть ваш пароль">
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Підтвердіть пароль</label>
+            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Підтвердіть ваш пароль">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Телефон</label>
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Введіть ваш телефон">
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Адреса</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Введіть вашу адресу" >
+        </div>
+        <div class="mb-3">
+            <label for="country" class="form-label">Країна</label>
+            <select class="form-select" name="country" id="country">
+                <option selected>Виберіть вашу країну</option>
+                <option value="UA">Україна</option>
+                <option value="US">США</option>
+                <option value="CA">Канада</option>
+                <option value="GB">Велика Британія</option>
+            </select>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms">
+            <label class="form-check-label" for="terms">Я погоджуюсь з умовами використання</label>
+        </div>
+        <button type="submit" class="btn btn-primary button">Зареєструватись</button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="web-storage.js"></script>
+</body>
+</html>

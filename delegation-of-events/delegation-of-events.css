@@ -1,0 +1,141 @@
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки з однаковою шириною */
+    grid-gap: 10px; /* відступи між елементами */
+    margin: 20px auto; /* центруємо контейнер на сторінці */
+    max-width: 1100px; /* максимальна ширина контейнера */
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.favorite-btn {
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+    transition: all 0.5s ease-in-out;
+}
+
+.buy-btn {
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+    transition: all 0.5s ease-in-out;
+}
+
+.buy-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.favorite-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.quantity-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.favorite-btn-active {
+    background-color: black;
+    color: white;
+}
+
+.quantity-controls {
+    justify-content: space-between;
+    display: flex;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.quantity {
+    align-items: center;
+    display: flex;
+    width: 20px;
+}
+
+.quantity-btn {
+    color: black;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 50px auto 0;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
