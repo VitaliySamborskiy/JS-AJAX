@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>User Data Management</h2>
+  <button class="addData">Add Data</button>
+  <table class="userDataTable">
+    <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Message</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+  <h2>User Data Management</h2>
+  <button class="openFormButton">Add User Data</button>
+  <div class="popup-background">
+    <div class="popup popupForm">
+      <form name="userDataForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+      </form>
+      <button class="submit">Submit</button>
+      <button class="close closeFormButton">Close</button>
+    </div>
+  </div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>

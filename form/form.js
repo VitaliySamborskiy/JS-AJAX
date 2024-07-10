@@ -75,3 +75,6 @@ function createDiv () {
         }
     }
 }
+
+document.cookie = "user=John";
+console.log(document.cookie);

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info span {
+            margin-right: 30px;
+        }
+        .header .btn-logout {
+            margin-left: auto;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="user-info">
+            <span class="user-name">Ім'я користувача</span>
+            <span class="user-email">Електронна пошта</span>
+            <button type="reset" class="btn btn-danger btn-logout button-exit hidden">Вийти</button>
+            <button class="btn btn-primary btn-logout button-call">Увійти</button>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="login-form hidden">
+        <h3 class="text-center">Вхід</h3>
+        <form name="loginForm">
+            <div class="form-group">
+                <label for="email">Ім'я</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Введіть Ім'я">
+            </div>
+            <div class="form-group">
+                <label for="email">Електронна пошта</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Введіть електронну пошту">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Введіть пароль">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block button-login">Увійти</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="cookies.js"></script>
+</body>
+</html>
