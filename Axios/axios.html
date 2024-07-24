@@ -1,0 +1,124 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios Form Example</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        div {
+            margin-bottom: 1em;
+        }
+
+        label {
+            margin-bottom: .5em;
+            color: #333333;
+            display: block;
+        }
+
+        input {
+            border: 1px solid #CCCCCC;
+            padding: .5em;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 0.7em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1em;
+            /*margin-top: 2em;*/
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 1em;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            margin: 0 0 0.5em;
+            color: #333;
+        }
+
+        .card-text {
+            margin: 0;
+            color: #666;
+        }
+
+        .notification-div {
+            max-width: 400px;
+            margin: 1em auto;
+            padding: 1em;
+            border-radius: 0.5em;
+            color: #fff;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .success {
+           color: #28a745; /* Зелений для успіху */
+        }
+
+        .error {
+            color: #dc3545; /* Червоний для помилок */
+        }
+
+        .info {
+            color: #17a2b8; /* Синій для інформаційних повідомлень */
+        }
+    </style>
+</head>
+<body>
+<h1>Axios Form Example</h1>
+<form name="dataForm">
+    <div>
+        <label for="title">Заголовок</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+        <label for="text">Текст</label>
+        <input type="email" id="text" name="text" required>
+    </div>
+    <div>
+        <label for="userId">UserID</label>
+        <input type="text" id="userId" name="userId" required>
+    </div>
+    <div>
+        <button class="loadData" type="button" id="loadData">Load Data</button>
+        <button class="postData" type="button" id="postData">Post Data</button>
+    </div>
+</form>
+<div class="notification">
+
+</div>
+<div class="allPost">
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="axios.js" defer></script>
+</body>
+</html>

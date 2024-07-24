@@ -50,5 +50,3 @@ const obj2 = JSON.parse(str, (key, value) => {
     return value;
 })
 console.log(obj2);
-
-// return JSON.parse(JSON.stringify(data));

@@ -24,14 +24,14 @@ function validation (obj) {
     }
     try {
         createText(emailBlockMessage, obj.email);
-        validationText(obj.email, /^[a-z0-9]/gi, "Використано заборонені символи, дозволеними символами є [A-Z],[a-z] та [0-9]");
+        validationText(obj.email, /^[a-z0-9]+$/gi, "Використано заборонені символи, дозволеними символами є [A-Z],[a-z] та [0-9]");
         validationText(obj.email, /@gmail.com/gi, "Некоректна пошта, відсутння частина [@gmail.com]");
     } catch (err) {
         createError(emailBlockMessage, err.message);
     }
     try {
         createText(passwordBlockMessage, obj.password);
-        validationText(obj.password,/^[a-z0-9]/gi,"Використано заборонені символи, дозволеними символами є [A-Z],[a-z] та [0-9]");
+        validationText(obj.password,/^[a-z0-9]+$/gi,"Використано заборонені символи, дозволеними символами є [A-Z],[a-z] та [0-9]");
     } catch (err) {
         createError(passwordBlockMessage, err.message);
     }

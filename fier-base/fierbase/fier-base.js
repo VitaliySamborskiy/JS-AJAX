@@ -34,6 +34,9 @@ export function submitBase () {
                 phone: form.elements.phone.value,
                 message: form.elements.message.value,
             });
+             console.log(docRef);
+             console.log(docRef._delegate);
+            console.log(docRef._key);
             console.log("Document written with ID: ", docRef.id);
         } catch (e) {
             console.error("Error adding document: ", e);
